@@ -1,0 +1,67 @@
+.topbar{
+	margin:0;
+	padding:0;
+	background-color:#593C96;
+	color:white;
+}
+.topbar h3{
+	margin:10px 0px 10px 0px;
+}
+.logo{
+	padding-right:10px;
+	border-right:solid 1px black;
+}
+#top-header{
+margin-bottom:2em;	
+}
+#nav-search ul
+{
+	width:100%;
+	padding-bottom:0;
+	margin-bottom:0;
+	text-align:center;
+}
+#nav-search li
+{
+	
+	padding-bottom:0;
+	margin-bottom:0;
+	
+}
+#nav-search a
+{
+	padding-top:0.2em;
+	margin-top:0;
+	padding-bottom:0.2em;
+	margin-bottom:0;
+	
+}
+#banner-carousel 
+{
+	padding-top:0.5em;
+	background-color:#9E88CB;
+	margin-bottom:2em;
+}
+#banner-carousel-main
+{
+padding-left:0.5em;
+padding-right:0;
+}
+#banner-carousel-side img
+{
+	margin-bottom:0.5em;
+}
+#banner-carousel-side 
+{
+	padding-right:0.5em;
+	padding-left:0.5em;
+}
+#banner-carousel-side-last img
+{
+
+	margin-bottom:0.5em;
+}
+#nav-main
+{
+	background-color:#273783;
+	}
