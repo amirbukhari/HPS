@@ -63,3 +63,15 @@ padding-right:0;
 
 	margin-bottom:0.5em;
 }
+#footer-background{
+		background-color:rgba(89,60,150,.8);
+}
+footer{
+	color:#fff;
+
+
+	padding:0.8em;
+	margin:1em 0;
+}
+
+#funded{text-align:center;margin:0.5em;}
