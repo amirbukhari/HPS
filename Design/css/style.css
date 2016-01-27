@@ -14,6 +14,9 @@ font-family:'Lato',serif;
 	padding-right:10px;
 	border-right:solid 1px black;
 }
+h1{
+	color:#593C96;
+}
 #top-header{
 margin-bottom:2em;	
 }
@@ -70,10 +73,13 @@ padding-right:0;
 #footer-background{
 		background-color:rgba(89,60,150,.8);
 }
+
+#btn-color{
+	background-color: #3C5294;
+	font-color:white;
+}
 footer{
 	color:#fff;
-
-
 	padding:0.8em;
 	margin:1em 0;
 }
