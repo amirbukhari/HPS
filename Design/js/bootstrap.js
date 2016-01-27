@@ -323,7 +323,7 @@ if (typeof jQuery === 'undefined') {
       .on('mouseenter.bs.carousel', $.proxy(this.pause, this))
       .on('mouseleave.bs.carousel', $.proxy(this.cycle, this))
   }
-
+ 
   Carousel.VERSION  = '3.3.6'
 
   Carousel.TRANSITION_DURATION = 600
@@ -334,7 +334,31 @@ if (typeof jQuery === 'undefined') {
     wrap: true,
     keyboard: true
   }
-
+   //AMIR
+  //$('#banner-carousel-side').find('img').addClass('banner-carousel-side-active');
+  Carousel.prototype.syncSideBanner = function (e){
+	  var activeIndex = this.getItemIndex(this.$active = this.$element.find('.item.active'))
+			if(activeIndex==2){
+				 $('#banner-carousel-side').find("img[src$='images/banner-1.jpg']").addClass('banner-carousel-side-active');
+			}
+			else {
+				 $('#banner-carousel-side').find("img[src$='images/banner-1.jpg']").removeClass('banner-carousel-side-active');
+			}
+			if(activeIndex==0){
+				 $('#banner-carousel-side').find("img[src$='images/banner-2.jpg']").addClass('banner-carousel-side-active');
+			}
+			else {
+				 $('#banner-carousel-side').find("img[src$='images/banner-2.jpg']").removeClass('banner-carousel-side-active');
+			}
+			if(activeIndex==1){
+				 $('#banner-carousel-side').find("img[src$='images/banner-3.jpg']").addClass('banner-carousel-side-active');
+			}else{
+				 $('#banner-carousel-side').find("img[src$='images/banner-3.jpg']").removeClass('banner-carousel-side-active');
+			}
+	    
+	}
+  //AMIR
+  
   Carousel.prototype.keydown = function (e) {
     if (/input|textarea/i.test(e.target.tagName)) return
     switch (e.which) {
@@ -451,15 +475,16 @@ if (typeof jQuery === 'undefined') {
           }, 0)
         })
         .emulateTransitionEnd(Carousel.TRANSITION_DURATION)
+		
     } else {
       $active.removeClass('active')
       $next.addClass('active')
       this.sliding = false
       this.$element.trigger(slidEvent)
+	 
     }
-
+	this.syncSideBanner();
     isCycling && this.cycle()
-
     return this
   }
 

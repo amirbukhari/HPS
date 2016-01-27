@@ -63,6 +63,10 @@ padding-right:0;
 
 	margin-bottom:0.5em;
 }
+.banner-carousel-side-active 
+{
+	border:solid 2px red;
+}
 #footer-background{
 		background-color:rgba(89,60,150,.8);
 }
