@@ -51,6 +51,10 @@ margin-bottom:2em;
 padding-left:0.5em;
 padding-right:0;
 }
+.carousel-caption
+{
+	background-color:rgba(0,0,0,0.5);
+}
 #banner-carousel-side img
 {
 	margin-bottom:0.5em;
