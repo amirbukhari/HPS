@@ -10,6 +10,15 @@ font-family:'Lato',serif;
 .topbar h3{
 	margin:10px 0px 10px 0px;
 }
+#topbar-title
+{
+	display:inline-block;
+}
+#topbar-login
+{
+	display:inline;
+	margin:3em 0px 10px 0px;
+}
 .logo{
 	padding-right:10px;
 	border-right:solid 1px black;
