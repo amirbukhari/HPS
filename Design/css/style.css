@@ -2,7 +2,11 @@
 Color1:#593C96
 Color1:#9E88CB;
 Color1:#3378b7
-Color1:
+----------------------------
+Color2:#525354 grey
+Color2:#6D6182 purple
+Color2:
+	
 	
 */
 
@@ -12,7 +16,7 @@ font-family:'Lato',serif;
 .topbar{
 	margin:0;
 	padding:0;
-	background-color:#593C96;
+	background-color:rgba(89,60,150,.8);
 	color:white;
 }
 .topbar h3{
@@ -106,5 +110,6 @@ footer{
 .footer-text{
 	margin: 0 auto;
 	width:80%;
+	text-align:center;
 	}
 #funded{text-align:center;margin:0.5em;}
