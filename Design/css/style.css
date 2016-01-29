@@ -16,8 +16,9 @@ font-family:'Lato',serif;
 }
 #topbar-login
 {
-	display:inline;
-	margin:3em 0px 10px 0px;
+	display:inline-block;
+	margin:10px 0px 10px 0px;
+	
 }
 .logo{
 	padding-right:10px;
@@ -90,6 +91,10 @@ footer{
 	color:#fff;
 	padding:0.8em;
 	margin:1em 0;
-}
 
+}
+.footer-text{
+	margin: 0 auto;
+	width:80%;
+	}
 #funded{text-align:center;margin:0.5em;}
