@@ -16,7 +16,7 @@ font-family:'Lato',serif;
 .topbar{
 	margin:0;
 	padding:0;
-	background-color:rgba(89,60,150,.8);
+	background-color:#593C96;
 	color:white;
 }
 .topbar h3{
@@ -116,6 +116,18 @@ footer{
 .footer-text{
 	margin: 0 auto;
 	width:80%;
-	text-align:center;
+	
 	}
+.footer-text a{
+	color:white;
+}
+.footer-text p{
+	margin:1em;
+}
+.footer-text img{
+	border:none;
+}
+.footer-text hr{
+	margin-top:3em;
+}
 #funded{text-align:center;margin:0.5em;}
