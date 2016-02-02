@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+	<head>
 		
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,10 +26,10 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		
-	
-</head>
-<body>
-	<div class="topbar">
+		
+	</head>
+	<body>
+		<div class="topbar">
 			<div class="container">
 				<h3>Hamilton Program for Schizophrenia</h3>
 			</div>
@@ -73,7 +73,7 @@
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<ul class="nav navbar-nav">
 							<li><a href="index.html">Home</a></li>
-							<li><a href="education_research.html">Education & Research</a></li>
+							<li><a href="#">Education & Research</a></li>
 							<li><a href="rehab.html">Rehabilitation & Treatment</a></li>
 							<li><a href="association.html">HPS Family Association</a></li>
 							<li><a href="about.html">About</a></li>
@@ -82,67 +82,89 @@
 					</div>
 				</div>
 			</nav>
-
-<h1>Contact</h1>
-
-
-<h3>Mailing Address</h3>
-
-<p>Hamilton Program For Schizophrenia</p>
-<p>21 King Street West, Suite 100</p>
-<p>Hamilton, Ontario L8P 4W7</p>
-<p>Telephone: (905) 525-2832</p>
-<p>Fax: (905) 546-0055</p>
-<p>Office Hours: Monday to Friday 9-12 and 1-5.  Office closes daily from 12-1pm</p>
-
-
-<h3>Referrals / IntAc</h3>
-
-<p>To refer someone to one of the four Mental Health Intensive Case Management Programs in Hamilton;</p>
-<ul>
-     <li>Canadian Mental Health Association, Hamilton Branch</li>
-     <li>City of Hamilton Mental Health/Outreach Team* (Community Mental Health Promotion Program)</li>
-     <li>Hamilton Mental Health Outreach Program</li>
-     <li>Hamilton Program for Schizophrenia</li>
-</ul>
-
-<p>Please contact IntAc (Intensive Case Management Access Coordination):</p>
-<p>21 King Street West, Suite 100</p>
-<p>Hamilton, Ontario L8P 4W7</p>
-<p>Telephone: (905) 528-0683</p>
-<p>Fax: (905) 546-0055</p>
-<p>Referral Hours: Monday to Friday 9:00am to 4:30pm</p>
-
-
-<p>Or Email IntAc Coordinator:</p>
-<p>IntAc@hpfs.on.ca</p>
-		</div>
-		<div class="container-fluid" id="footer-background">
-			<footer>
-				<div class="container">
-					<div class="row">
-					<div class="col-md-5 col-md-offset-1">
-						<p>Hamilton Program For Schizophrenia</p>
-						<p>21 King Street West, Suite 100</p>
-						<p>Hamilton, Ontario L8P 4W7</p>
-					</div>
-					<div class="col-md-5 col-md-offset-1">
-						<p><strong>Office Hours:</strong> Monday to Friday 9:00am <br> to 5:00pm (closed daily 12-1pm)</p>
-						<p><strong>Telephone:</strong> (905) 525-2832</p>
-						<p><strong>Fax:</strong> (905) 546-0055</p>
-						<p><strong>E-mail:</strong> info@hpfs.on.ca</p>
-					</div>
-					</div>
+			
+			<h1>Contact</h1>
+			
+			<div class="row">				
+				<div class="col-md-6">
+					<h3>Referrals / IntAc</h3>
+					
+					<p>To refer someone to one of the four Mental Health Intensive Case Management Programs in Hamilton;</p>
+					<ul>
+						<li>Canadian Mental Health Association, Hamilton Branch</li>
+						<li>City of Hamilton Mental Health/Outreach Team* (Community Mental Health Promotion Program)</li>
+						<li>Hamilton Mental Health Outreach Program</li>
+						<li>Hamilton Program for Schizophrenia</li>
+					</ul>
+					
+					<p>Please contact IntAc (Intensive Case Management Access Coordination):</p>
+					<p>21 King Street West, Suite 100</p>
+					<p>Hamilton, Ontario L8P 4W7</p>
+					<p>Telephone: (905) 528-0683</p>
+					<p>Fax: (905) 546-0055</p>
+					<p>Referral Hours: Monday to Friday 9:00am to 4:30pm</p>
+					
+					
+					<p>Or Email IntAc Coordinator:</p>
+					<p>IntAc@hpfs.on.ca</p>
 				</div>
-			</footer>
-		</div>	
-	<div class="row" id="funded">
-					<div class="col-md-12">
-						<p>Funded by Local Health Integration Network</p>
-					</div>
-				</div>			
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>	
-</body>
-</html>
+				<div class="col-md-6">
+					<h3>Mailing Address</h3>
+					
+					<p>Hamilton Program For Schizophrenia</p>
+					<p>21 King Street West, Suite 100</p>
+					<p>Hamilton, Ontario L8P 4W7</p>
+					<p>Telephone: (905) 525-2832</p>
+					<p>Fax: (905) 546-0055</p>
+					<p>Office Hours: Monday to Friday 9-12 and 1-5.  Office closes daily from 12-1pm</p>
+					
+					<div id="map"></div>
+					<script>
+						function initMap() {
+							var myLatLng = {lat: 43.255385, lng: -79.868351};
+							
+							var map = new google.maps.Map(document.getElementById('map'), {
+								zoom: 16,
+								center: myLatLng
+							});	
+							
+							var marker = new google.maps.Marker({
+								position: myLatLng,
+								map: map,
+								title: 'Hamilton Program For Schizophrenia'	
+							});
+						}
+					</script>
+					<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+					async defer></script>
+				</div>
+			</div>
+			<div class="container-fluid" id="footer-background">
+				<footer>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-5 col-md-offset-1">
+								<p>Hamilton Program For Schizophrenia</p>
+								<p>21 King Street West, Suite 100</p>
+								<p>Hamilton, Ontario L8P 4W7</p>
+							</div>
+							<div class="col-md-5 col-md-offset-1">
+								<p><strong>Office Hours:</strong> Monday to Friday 9:00am <br> to 5:00pm (closed daily 12-1pm)</p>
+								<p><strong>Telephone:</strong> (905) 525-2832</p>
+								<p><strong>Fax:</strong> (905) 546-0055</p>
+								<p><strong>E-mail:</strong> info@hpfs.on.ca</p>
+							</div>
+						</div>
+					</div>	
+				</footer>
+			</div>	
+			<div class="row" id="funded">
+				<div class="col-md-12">
+					<p>Funded by Local Health Integration Network</p>
+				</div>
+			</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="js/bootstrap.min.js"></script>	
+		</body>
+	</html>
