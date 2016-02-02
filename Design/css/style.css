@@ -1,17 +1,16 @@
 /*
-Color1:#593C96
-Color1:#9E88CB;
-Color1:#3378b7
-----------------------------
-Color2:#525354 grey
-Color2:#6D6182 purple
-Color2:
+	Color1:#593C96
+	Color1:#9E88CB;
+	Color1:#3378b7
+	----------------------------
+	Color2:#525354 grey
+	Color2:#6D6182 purple
+	Color2:
 	
 	
 */
-
 body{
-font-family:'Lato',serif;
+	font-family:'Lato',serif;
 }
 .topbar{
 	margin:0;
@@ -45,7 +44,7 @@ h1{
 	color:#593C96;
 }
 #top-header{
-margin-bottom:2em;	
+	margin-bottom:2em;	
 }
 #nav-search ul
 {
@@ -78,8 +77,8 @@ margin-bottom:2em;
 }
 #banner-carousel-main
 {
-padding-left:0.5em;
-padding-right:0;
+	padding-left:0.5em;
+	padding-right:0;
 }
 .carousel-caption
 {
@@ -96,7 +95,7 @@ padding-right:0;
 }
 #banner-carousel-side-last img
 {
-
+	
 	margin-bottom:0.5em;
 }
 .banner-carousel-side-active 
@@ -104,20 +103,20 @@ padding-right:0;
 	border:solid 4px #3378b7;
 }
 #footer-background{
-		background-color:rgba(89,60,150,.8);
-		margin-top:2em;
+	background-color:rgba(89,60,150,.8);
+	margin-top:2em;
 }
 footer{
 	color:#fff;
 	padding:0.8em;
 	margin:1em 0;
-
+	
 }
 .footer-text{
 	margin: 0 auto;
 	width:80%;
 	
-	}
+}
 .footer-text a{
 	color:white;
 }
@@ -140,3 +139,54 @@ footer{
 	-moz-box-shadow: 0px 6px 42px -9px rgba(0,0,0,0.75);
 	box-shadow: 0px 6px 42px -9px rgba(0,0,0,0.75);
 }
+
+
+/*---------------------------------------------------------------------------------------
+	-----------------------------------------------------------------------------------------
+	-----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+	
+	.logo{
+		border-right:solid 0px black;
+		margin:0 auto;
+	}
+}
+@media screen and (max-width: 979px) {
+	
+	#nav-search{
+		
+		margin-top:2em;
+	}
+	#nav-search a{
+		margin-left:2em;
+	}
+	#banner-carousel 
+	{
+		padding:0.5em;
+		padding-left:0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
