@@ -144,9 +144,8 @@ footer{
 }
 /* calendar */
 
-
 a.button {
-	color:#FFFF00;
+	color:white;
 }
 
 .calendar {
@@ -171,8 +170,8 @@ a.button {
 }
 
 .calendar th {
-	background-color: #005999;
-	color: #FFFF00;
+	background-color:#593C96;
+	color: white;
 	font-weight: bold;
 }
 .calendar td {
@@ -186,13 +185,13 @@ a.button {
 }
 
 .weekend {
-	color: #999;
+	color: black;
 }
 
 .occassion {
 	background-color: #ffffbf;
 }
-
+/* calendar */
 .topbar-nav-search{
 	margin-top:0.5em;
 	margin-right:0;

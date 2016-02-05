@@ -5,7 +5,7 @@ Created by: Shaun Bailey | http://www.sbwebdevelopment.co.uk */
 var monthsArray = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
 var daysArray = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
 var prevYears = 10;	// number of years before current date
-var futureYears = 10;	// number of years after current date
+var futureYears = 25;	// number of years after current date
 var today = new Date();
 var nowMonth = today.getMonth();
 var nowYear = today.getFullYear();
@@ -19,10 +19,11 @@ var eventsArray = new Array();
 eventsArray[0] = new newEvent(25,12,2006,"Christmas Day","Annual");
 eventsArray[1] = new newEvent(30,7,2006,"My Birthday","Annual");
 eventsArray[2] = new newEvent(1,1,2006,"First Day of Month","Monthly");
-eventsArray[3] = new newEvent(2,12,2006,"Weekly occurence","Weekly");
+eventsArray[3] = new newEvent(2,12,2006,"Test","Weekly");
 eventsArray[4] = new newEvent(24,12,2006,"Christmas Eve","Annual");
 eventsArray[5] = new newEvent(15,3,2007,"Physical Check-Up","Annual");
-eventsArray[6] = new newEvent(12,3,2007,"Meeting");
+eventsArray[6] = new newEvent(12,3,2007,"Meeting","Monthly");
+eventsArray[7] = new newEvent(8,3,2007,"Test Event","Annual");
 
 // create event object
 function newEvent(day, month, year, memo, occurrence) {
