@@ -25,9 +25,27 @@
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		
+		<script>
+			$(function() {
+				$('.pull-right a[href*=#]:not([href=#])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+						if (target.length) {
+							$('html,body').animate({
+								scrollTop: target.offset().top
+							}, 1000);
+							return false;
+						}
+					}
+				});
+			});
+		</script>		
 		
 	</head>
-	<body>
+	<body name="top">
 		
 		<div class="topbar">
 			<div class="container">
@@ -54,7 +72,7 @@
 				<div class="col-md-4 col-sm-12">
 					<nav id="nav-search" class="hidden-xs">
 						<ul class="nav navbar-nav">
-						<li><a href="index.html">Home</a></li>
+							<li><a href="index.html">Home</a></li>
 							<li><a href="clients.html">Clients</a></li>
 							<li><a href="events.html">Events</a></li>
 							<li><a>En Français</a></li>
@@ -186,11 +204,11 @@
 			
 			<p>The Hamilton Program for Schizophrenia is a comprehensive community-based treatment and rehabilitation program. We are dedicated to helping people with schizophrenia through case management services, rehabilitation programs and psychiatric care. We make a long-term commitment to our clients and their families. We are prepared to support each client as long as they continue to require assistance to successfully live in the community.In times of crisis, our psychiatrists and case managers provide direct continuous care. In the event that hospitalization is required, the HPS team continues in the treatment delivery through formal links with St. Joseph’s Healthcare, Centre for Mountain Health Services.</p>
 			<div id="content" class="collapse">
-			<p>Our goal is to see each client actively pursuing a healthy and fulfilling life in the community. To this end, we provide support to individuals at home or work and in leisure activities. Situated in downtown Hamilton, we are easily accessible by public transportation.</p>
-			
-			<p>HPS partners with McMaster University and Mohawk College in research and education. We are committed to ongoing schizophrenia research and program development and evaluation. We strive to ensure that our activities are in step with current, evidence-based best practices. This website provides a comprehensive listing of HPS programs and services. We also have included the many community partners who are a vital part in assisting our clients to achieve their individual goals. HPS provides a comprehensive program and is an integral part of the Hamilton mental health system. Our goal is to establish a supportive environment within which individuals with schizophrenia can pursue their desired goals.</p>
-			
-			<p>Pour obtenir des services en français, veuillez cliquer ici.</p>
+				<p>Our goal is to see each client actively pursuing a healthy and fulfilling life in the community. To this end, we provide support to individuals at home or work and in leisure activities. Situated in downtown Hamilton, we are easily accessible by public transportation.</p>
+				
+				<p>HPS partners with McMaster University and Mohawk College in research and education. We are committed to ongoing schizophrenia research and program development and evaluation. We strive to ensure that our activities are in step with current, evidence-based best practices. This website provides a comprehensive listing of HPS programs and services. We also have included the many community partners who are a vital part in assisting our clients to achieve their individual goals. HPS provides a comprehensive program and is an integral part of the Hamilton mental health system. Our goal is to establish a supportive environment within which individuals with schizophrenia can pursue their desired goals.</p>
+				
+				<p>Pour obtenir des services en français, veuillez cliquer ici.</p>
 			</div>
 			<button type="button" class="btn btn-primary btn-sm center-block" data-toggle="collapse" data-target="#content">More Info</button>
 			<hr>
@@ -198,51 +216,48 @@
 		</div>	
 		<div class="container-fluid" id="footer-background">
 			<footer>
-				<div class="container">
 				
 					<hr>
 					<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-12">
 							<div class="footer-text">
 									<img class="img-responsive logo" src="images/HPSLogo.png">
 								
 							
 							</div>
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-sm-6">
 							<div class="footer-text">
-								<!--<p>Hamilton Program For Schizophrenia</p>
+								<p>Hamilton Program For Schizophrenia</p>
 								<p>21 King Street West, Suite 100</p>
-								<p>Hamilton, Ontario L8P 4W7</p>-->
-								
-								<p><a href="#">Home</a></p>
+								<p>Hamilton, Ontario L8P 4W7</p>
+								<p><strong>Office Hours:</strong> Monday to Friday 9:00am <br> to 5:00pm (closed daily 12-1pm)</p>
+<!-- 								<p><a href="#">Home</a></p>
 								<p><a href="#">Education & Research</a></p>
-								<p><a href="#">Staff</a></p>
-								
-								
-								
-							
+								<p><a href="#">Staff</a></p> -->
+
 							</div>
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-sm-6">
 							<div class="footer-text">
-								<!--<p><strong>Office Hours:</strong> Monday to Friday 9:00am <br> to 5:00pm (closed daily 12-1pm)</p>-->
-								<p><a href="rehab.html">Rehabilitation & Treatment</a></p>
-								<p><a href="#">HPS Family Association</a></p>
-								<p><a href="#">Events</a></p>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="footer-text">
-							<p><a href="about.html">About</a></p>
-								<p><a href="contact.html">Contact</a></p>
-								<p><a href="#">Login</a></p>
-								<!--<p><strong>Telephone:</strong> (905) 525-2832</p>
+								
+								<p><strong>Telephone:</strong> (905) 525-2832</p>
 								<p><strong>Fax:</strong> (905) 546-0055</p>
-								<p><strong>E-mail:</strong> info@hpfs.on.ca</p>-->
+								<p><strong>E-mail:</strong> info@hpfs.on.ca</p>
+<!-- 							<p><a href="rehab.html">Rehabilitation & Treatment</a></p>
+								<p><a href="#">HPS Family Association</a></p>
+								<p><a href="#">Events</a></p> -->
 							</div>
 						</div>
-					</div>
+						<div class="col-md-3 col-sm-12">
+							<div class="footer-text pull-right">
+							<!-- <p><a href="about.html">About</a></p> -->
+<!-- 							<p><a href="contact.html">Contact</a></p>
+								<p><a href="#">Login</a></p> -->
+						
+								<p class="pull-right" ><a href="#top"><img src="images/up-arrow.png" alt="back to top" /></a></p>
+							</div>
+						</div>
 				</div>
 			</footer>
 		</div>	

@@ -26,9 +26,26 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		
+		<script>
+			$(function() {
+				$('a[href*=#]:not([href=#])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+						if (target.length) {
+							$('html,body').animate({
+								scrollTop: target.offset().top
+							}, 1000);
+							return false;
+						}
+					}
+				});
+			});
+		</script>			
 	</head>
-	<body>
+	<body name="top">
 		<div class="topbar">
 			<div class="container">
 				<h3>Hamilton Program for Schizophrenia</h3>
@@ -139,23 +156,53 @@
 					async defer></script>
 				</div>
 			</div>
+			</div>
 			<div class="container-fluid" id="footer-background">
 				<footer>
 					<div class="container">
+						
+						<hr>
 						<div class="row">
-							<div class="col-md-5 col-md-offset-1">
-								<p>Hamilton Program For Schizophrenia</p>
-								<p>21 King Street West, Suite 100</p>
-								<p>Hamilton, Ontario L8P 4W7</p>
+							<div class="col-md-3 col-sm-12">
+								<div class="footer-text">
+									<img class="img-responsive logo" src="images/HPSLogo.png">
+									
+									
+								</div>
 							</div>
-							<div class="col-md-5 col-md-offset-1">
-								<p><strong>Office Hours:</strong> Monday to Friday 9:00am <br> to 5:00pm (closed daily 12-1pm)</p>
-								<p><strong>Telephone:</strong> (905) 525-2832</p>
-								<p><strong>Fax:</strong> (905) 546-0055</p>
-								<p><strong>E-mail:</strong> info@hpfs.on.ca</p>
+							<div class="col-md-3 col-sm-6">
+								<div class="footer-text">
+<!-- 									<p>Hamilton Program For Schizophrenia</p>
+									<p>21 King Street West, Suite 100</p>
+									<p>Hamilton, Ontario L8P 4W7</p>
+									<p><strong>Office Hours:</strong> Monday to Friday 9:00am <br> to 5:00pm (closed daily 12-1pm)</p> -->
+									<p><a href="#">Home</a></p>
+									<p><a href="#">Education & Research</a></p>
+									<p><a href="#">Staff</a></p> 
+									<p><a href="contact.html">Contact</a></p>	
+								</div>
 							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="footer-text">
+									
+<!-- 									<p><strong>Telephone:</strong> (905) 525-2832</p>
+									<p><strong>Fax:</strong> (905) 546-0055</p>
+									<p><strong>E-mail:</strong> info@hpfs.on.ca</p> -->
+									<p><a href="rehab.html">Rehabilitation & Treatment</a></p>
+									<p><a href="#">HPS Family Association</a></p>
+									<p><a href="#">Events</a></p> 
+									<p><a href="about.html">About</a></p>
+									<p><a href="#">Login</a></p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-12">
+								<div class="footer-text pull-right">
+
+									<p class="pull-right"><a href="#top"><img src="images/up-arrow.png" alt="back to top"/></a></p>
+								</div>
+							</div>							
 						</div>
-					</div>	
+					</div>
 				</footer>
 			</div>	
 			<div class="row" id="funded">
