@@ -208,6 +208,11 @@ a.button {
 		border-right:solid 0px black;
 		margin:0 auto;
 	}
+	#banner-carousel 
+	{
+		padding:0.5em;
+		padding-left:0;
+	}
 }
 @media screen and (max-width: 979px) {
 	
