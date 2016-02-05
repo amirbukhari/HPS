@@ -57,6 +57,7 @@ h1{
 {	
 	padding-bottom:0;
 	margin-bottom:0;
+	width:25%;
 }
 #nav-search a
 {
@@ -64,6 +65,8 @@ h1{
 	margin-top:0;
 	padding-bottom:0.2em;
 	margin-bottom:0;
+	padding-left:0;
+	padding-right:0;
 	
 }
 #banner-carousel 
@@ -190,6 +193,10 @@ a.button {
 	background-color: #ffffbf;
 }
 
+.topbar-nav-search{
+	margin-top:0.5em;
+	margin-right:0;
+	}
 /*---------------------------------------------------------------------------------------
 	-----------------------------------------------------------------------------------------
 	-----------------------------------------------------------------------------------------
