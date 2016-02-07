@@ -31,39 +31,31 @@
 	<body>
 		<div class="topbar">
 			<div class="container">
-				<h3>Hamilton Program for Schizophrenia</h3>
+				<div id="topbar-title">
+					<h3>Hamilton Program for Schizophrenia</h3>
+				</div>
+				<div id="topbar-login" class="pull-right  hidden-xs">
+					<button type="button" class="btn btn-primary ">Login</button>
+				</div>
 			</div>
 		</div>
-		<div class="container">
-			<p style="color:red">PLEASE NOTE:  HPS IS MOVING!  On January 29th, HPS will be closed while it relocates to 20 Hughson St. South – Suite 405, Hamilton, ON  L8N 2A1.  Our phone number, fax number and e-mail addresses remain unchanged.</p>
-			<div class="row" id="top-header">
-				<div class="col-md-2">
-					<img class="img-responsive logo" src="images/HPSLogo.png">
-				</div>
-				<div class="col-md-6">
-					<h3>Hamilton Program for Schizophrenia</h3>
-					<h4>Striving for recovery and success through treatment and rehabilitation</h4>
-				</div>
-				<div class="col-md-4 ">
-					<nav id="nav-search">
-						<ul class="nav navbar-nav">
-							<li><a href="clients.html">Clients</a></li>
-							<li><a href="staff.html">Staff</a></li>
-							<li><a href="events.html">Events</a></li>
-							<li><a>En Français</a></li>
-						</ul>
-					</nav>
-					<input type="text" placeholder="Search"class="form-control">
+		<nav class="navbar navbar-inverse hidden-md hidden-lg">
+			<div class="container-fluid">
+				
+				<div class="navbar-header">
+					<div class="col-xs-9 col-sm-4 col-md-3 pull-left">
 					
-				</div>
-			</div>
-			
-			
-			<!------------------------------------------------------------------------------>
-			
-			<nav class="navbar navbar-inverse">
-				<div class="container-fluid">
-					<div class="navbar-header">
+						<div class="input-group topbar-nav-search hidden-sm">
+							<div class="input-group-btn">
+								<button type="button" class="btn btn-primary ">Login</button>
+							</div>
+								<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+								<div class="input-group-btn">
+									<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+								</div>
+							</div>
+							
+						</div>
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -72,16 +64,69 @@
 					</div>
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<ul class="nav navbar-nav">
-							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="#">Home</a></li>
 							<li><a href="education_research.html">Education & Research</a></li>
-							<li class="active"><a href="rehab.html">Rehabilitation & Treatment</a></li>
+							<li><a href="rehab.html">Rehabilitation & Treatment</a></li>
 							<li><a href="association.html">HPS Family Association</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a>En Français</a></li>
+							<li><a href="events.html">Events</a></li>
+							
+								<li><a href="about.html">About</a></li>
+								<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</div>
+					
 				</div>
 			</nav>
+			<div class="container">
+				<div class="text-danger">
+					<p>PLEASE NOTE:  HPS IS MOVING!  On January 29th, HPS will be closed while it relocates to 20 Hughson St. South – Suite 405, Hamilton, ON  L8N 2A1.  Our phone number, fax number and e-mail addresses remain unchanged.</p>
+				</div>
+				<div class="row" id="top-header">
+					<div class="col-md-2 col-sm-4">
+						<img class="img-responsive logo" src="images/HPSLogo.png">
+					</div>
+					<div class="col-md-6 col-sm-8">
+						<h3>Hamilton Program for Schizophrenia</h3>
+						<h4>Striving for recovery and success through treatment and rehabilitation</h4>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<nav id="nav-search" class="hidden-xs">
+							<ul class="nav navbar-nav">
+							<li><a>En Français</a></li>
+							<li><a href="events.html">Events</a></li>
+							
+								<li><a href="about.html">About</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+						<input type="text" placeholder="Search"class="form-control hidden-xs">
+						
+					</div>
+				</div>
+				
+				
+				<!------------------------------------------------------------------------------>
+				
+				<nav class="navbar navbar-inverse hidden-sm hidden-xs">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>                        
+							</button>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li><a href="index">Home</a></li>
+								<li><a href="education_research.html">Education & Research</a></li>
+								<li class="active"><a href="rehab.html">Rehabilitation & Treatment</a></li>
+								<li><a href="association.html">HPS Family Association</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
 			
 			
 		<h1>Rehab & Treatment</h1>
@@ -141,30 +186,60 @@
 			<div class="container-fluid" id="footer-background">
 				<footer>
 					<div class="container">
+						
+						<hr>
 						<div class="row">
-							<div class="col-md-5 col-md-offset-1">
-								<p>Hamilton Program For Schizophrenia</p>
-								<p>21 King Street West, Suite 100</p>
-								<p>Hamilton, Ontario L8P 4W7</p>
+							<div class="col-md-3 col-sm-12">
+								<div class="footer-text">
+									<img class="img-responsive logo" src="images/HPSLogo.png">
+									
+									
+								</div>
 							</div>
-							<div class="col-md-5 col-md-offset-1">
-								<p><strong>Office Hours:</strong> Monday to Friday 9:00am <br> to 5:00pm (closed daily 12-1pm)</p>
-								<p><strong>Telephone:</strong> (905) 525-2832</p>
-								<p><strong>Fax:</strong> (905) 546-0055</p>
-								<p><strong>E-mail:</strong> info@hpfs.on.ca</p>
+							<div class="col-md-3 col-sm-6">
+								<div class="footer-text">
+<!-- 									<p>Hamilton Program For Schizophrenia</p>
+									<p>21 King Street West, Suite 100</p>
+									<p>Hamilton, Ontario L8P 4W7</p>
+									<p><strong>Office Hours:</strong> Monday to Friday 9:00am <br> to 5:00pm (closed daily 12-1pm)</p> -->
+									<p><a href="index.html">Home</a></p>
+									<p><a href="education_research.html">Education & Research</a></p>
+									<p><a href="staff.html">Staff</a></p> 
+									<p><a href="contact.html">Contact</a></p>	
+								</div>
 							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="footer-text">
+									
+<!-- 									<p><strong>Telephone:</strong> (905) 525-2832</p>
+									<p><strong>Fax:</strong> (905) 546-0055</p>
+									<p><strong>E-mail:</strong> info@hpfs.on.ca</p> -->
+									<p><a href="rehab.html">Rehabilitation & Treatment</a></p>
+									<p><a href="association.html">HPS Family Association</a></p>
+									<p><a href="events.html">Events</a></p> 
+									<p><a href="about.html">About</a></p>
+									<p><a href="#">Login</a></p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-12">
+								<div class="footer-text pull-right">
+
+									<p class="pull-right"><a href="#top"><img src="images/up-arrow.png" alt="back to top"/></a></p>
+								</div>
+							</div>							
 						</div>
 					</div>
 				</footer>
-			</div>	
+			</div>
+		
 		<div class="row" id="funded">
 			<div class="col-md-12">
 				<p>Funded by Local Health Integration Network</p>
 			</div>
 		</div>			
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>	
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="js/bootstrap.js"></script>
 </body>
 </html>
 								
